@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipCal.css">
+    <script src="tipCal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="upperIntro">
+            <div>
+                <h1>Tip Calculator</h1>
+            </div>
+            <div class="upperAlert">
+                <img src="/check.png" title="Click to know how to use" alt="Introduction to use" onclick="giveAlert()">
+                <img src="/copy-writing.png" title="Just a NOTE" alt="Note" onclick="giveAlert1()">
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="left-side">
+                <div class="left-small">
+                    <p>Bill</p>
+                    <input type="text" id="bill" placeholder="0"  oninput="printCal()">
+                </div>
+                <div class="left-small">
+                    <p>Tip%</p>
+                    <input type="number" id="tip" placeholder="0"  oninput="printCal()">
+                </div>
+                <div class="left-small">
+                    <p>Number of people</p>
+                    <input type="number" id="numOfPeople" oninput="printCal()"  placeholder="0">
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-small">
+                    <div>
+                        <p>Tip per person</p>
+                    </div>
+                    <div>
+                        <span id="tip-per-person">0</span>
+                        <span class="rupee">₹</span>
+                    </div>
+                </div>
+                <div class="right-small">
+                    <div>
+                        <p>Total per person</p>
+                    </div>
+                    <div>
+                        <span id="total-per-person">0</span>
+                        <span class="rupee">₹</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
